@@ -1,0 +1,65 @@
+<header class="nav-header">
+  <div class="nav-inner">
+    <div class="title-logo">
+      <div>
+        <a href="{{ pathto('index') if project == 'Nebula' else 'https://docs.nebula.org/en/latest/index.html' }}"><img src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/></a>
+      </div>
+      <a href="{{ pathto('index') if project == 'Nebula' else 'https://docs.nebula.org/en/latest/index.html' }}"><div class="brand">{{ docstitle }}</div></a>
+    </div>
+    <div class="nav-toggler"><i class="fas fa-chevron-down"></i></div>
+    <div class="main-sections nav-collapsed">
+      <div>
+        <a href="{{ pathto('index') if project == 'Nebulasnacks' else 'https://docs.nebula.org/projects/cookbook/en/latest/index.html'}}">
+          <div class="brand">{{ _("Getting Started") }}</div>
+        </a>
+      </div>
+      <div>
+        <a href="{{ pathto('userguide') if project == 'Nebulasnacks' else 'https://docs.nebula.org/projects/cookbook/en/latest/userguide.html' }}">
+          <div class="brand">{{ _("User Guide") }}</div>
+        </a>
+      </div>
+      <div>
+        <a href="{{ pathto('tutorials') if project == 'Nebulasnacks' else 'https://docs.nebula.org/projects/cookbook/en/latest/tutorials.html' }}">
+          <div class="brand">{{ _("Tutorials") }}</div>
+        </a>
+      </div>
+      <div>
+        <a href="{{ pathto('integrations') if project == 'Nebulasnacks' else 'https://docs.nebula.org/projects/cookbook/en/latest/integrations.html' }}">
+          <div class="brand">{{ _("Integrations") }}</div>
+        </a>
+      </div>
+      <div>
+        <a href="{{ pathto('deployment/index') if project == 'Nebula' else 'https://docs.nebula.org/en/latest/deployment/index.html' }}">
+          <div class="brand">{{ _("Deployment") }}</div>
+        </a>
+      </div>
+      <div>
+        <a href="{{ pathto('reference/index') if project == 'Nebula' else 'https://docs.nebula.org/en/latest/reference/index.html' }}">
+          <div class="brand">{{ _("API Reference") }}</div>
+        </a>
+      </div>
+      <div>
+        <a href="{{ pathto('concepts/basics') if project == 'Nebula' else 'https://docs.nebula.org/en/latest/concepts/basics.html' }}">
+          <div class="brand">{{ _("Concepts") }}</div>
+        </a>
+      </div>
+      <div>
+        <a href="{{ pathto('community/index') if project == 'Nebula' else 'https://docs.nebula.org/en/latest/community/index.html' }}">
+          <div class="brand">{{ _("Community") }}</div>
+        </a>
+      </div>
+    </div>
+    <div class="external-links nav-collapsed">
+      <div>
+        <a href="https://slack.nebula.org" target="_blank" title="Slack">
+          <div><i class="fab fa-slack icon"></i></div>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.nebula.org" target="_blank">
+          <div>nebula.org<i class="fas fa-external-link-alt link-out"></i></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
